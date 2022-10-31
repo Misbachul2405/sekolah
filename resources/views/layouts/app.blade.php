@@ -59,7 +59,7 @@
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="index.html">SMK INDONESIA</a>
+                        <a href="index.html">SMK Muha 2 Genteng</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
                         <a href="index.html">SMK</a>
@@ -138,8 +138,8 @@
                                 @endcan
 
                                 @can('users.index')
-                                    <li class="{{ setActive('admin/user') }}"><a class="nav-link"
-                                        href="#"><i class="fas fa-users"></i> Users</a>
+                                <li class="{{ setActive('admin/user') }}"><a class="nav-link"
+                                    href="{{ route('admin.user.index') }}"><i class="fas fa-users"></i> Users</a>
                                 </li>
                                 @endcan
                             </ul>
