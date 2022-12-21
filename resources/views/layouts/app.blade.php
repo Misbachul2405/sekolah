@@ -89,9 +89,8 @@
                         @endcan
 
                         @can('events.index')
-                        <li class="{{ setActive('admin/event') }}"><a class="nav-link" href="#"><i
-                                    class="fas fa-bell"></i>
-                                <span>Agenda</span></a></li>
+                        <li class="{{ setActive('admin/event') }}"><a class="nav-link" href="{{ route('admin.event.index') }}"><i class="fas fa-bell"></i>
+                        <span>Agenda</span></a></li>
                         @endcan
 
                         @if(auth()->user()->can('photos.index') || auth()->user()->can('videos.index'))
@@ -99,9 +98,9 @@
                         @endif
 
                         @can('photos.index')
-                        <li class="{{ setActive('admin/photo') }}"><a class="nav-link" href="#"><i
-                                    class="fas fa-image"></i>
-                                <span>Foto</span></a></li>
+                        <li class="{{ setActive('admin/photo') }}"><a class="nav-link"
+                            href="{{ route('admin.photo.index') }}"><i class="fas fa-image"></i>
+                            <span>Foto</span></a></li>
                         @endcan
 
                         @can('videos.index')
