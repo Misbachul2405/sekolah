@@ -104,9 +104,8 @@
                         @endcan
 
                         @can('videos.index')
-                        <li class="{{ setActive('admin/video') }}"><a class="nav-link" href="#"><i
-                                    class="fas fa-video"></i>
-                                <span>Video</span></a></li>
+                        <li class="{{ setActive('admin/video') }}"><a class="nav-link" href="{{ route('admin.video.index') }}"><i class="fas fa-video"></i>
+                            <span>Video</span></a></li>
                         @endcan
 
                         @if(auth()->user()->can('roles.index') || auth()->user()->can('permission.index') ||
